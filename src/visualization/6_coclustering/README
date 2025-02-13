@@ -1,0 +1,10 @@
+
+######################Co-clustering of commmunity dynamis with clone dynamics###########################
+
+1. 1_apply_coclustering.R: Cluster the 16S and lineage dynamics and plot the dendograms.
+
+2. then run exec_mixin.index.quantify. bash 
+this is for plotting and calculating the mixing index within cohorts and between groups
+
+
+

@@ -1,0 +1,28 @@
+
+######################This is for determining the clone dynamics###########################
+############ execClustering.sh ###########
+
+##this is ploting cluster treshold between range 0.1-0.9 and check to see which threshold gvies better information###
+
+  
+condition.list file lists the prefixes of mice cohorts(im,gf,rm)
+other .list files contain the mouse samples per cohort (im1,im2,im3, etc.)
+
+Executes the first 5 steps in the clustering pipeline:
+
+1. Filtering the data based on the number of non-zero barcodes
+2. Computing the correlation matrix for filtered barcodes
+3. Plotting and flattening dendrogram into clusters
+4. Plotting clusters depending on treshold and extracting loess fits
+5. Calculating the smallest distance between two loess within the cluster depending on treshold and choose the treshold based on that.
+
+############ execClustering2.sh ###########
+
+6.Depending on choosen treshold choose your clones
+
+7. 6_cluster_of_clusters.R: Clustering all loess fits for each group of mice to see their dynamic similarity
+
+8. 7_cluster_similarity.R : Use this R code to compute the pairwise overlap between clusters for each group of mice and check their significance with z-score simulation.
+
+
+######some of the plots were removed dues to high size####

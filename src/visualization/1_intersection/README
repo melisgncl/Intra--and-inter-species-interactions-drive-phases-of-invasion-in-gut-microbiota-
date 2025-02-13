@@ -1,0 +1,5 @@
+1_importReshape.R: import the barcode clustering data and reshape in more convenient format
+
+2_calculateIntersection.R: merge the reshaped data with the list of clusters to get the top barcodes per sample
+
+3_plotIntersection.R: compute and plot the intersection of within and between cohorts
