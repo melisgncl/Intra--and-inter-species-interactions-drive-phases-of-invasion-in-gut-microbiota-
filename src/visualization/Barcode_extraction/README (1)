@@ -1,5 +1,0 @@
-This folder has the scripts to process the barcode sequencing data.
-
-The files *_condition.list list the conditions, i.e. the mice to analyze. I create a separate list for each cohort.
-
-The files *_sample.list list the samples, i.e. the individual sequencing samples. I also create a separate list for each cohort.
