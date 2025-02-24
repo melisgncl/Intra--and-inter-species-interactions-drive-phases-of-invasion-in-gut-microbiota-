@@ -1,0 +1,48 @@
+
+######################DCM###########################
+
+This repository contains functions necessary for DCM analysis. The provided R functions help with preprocessing, time series interpolation, changepoint detection, and Jacobian matrix calculations for microbial community dynamics.
+
+##Key Features
+
+Preprocessing Tools: Functions for handling missing values, zero filtering, and data normalization.
+
+Changepoint Detection: Implements find_significant_changepoints_penalties to identify important time points using geometric changepoint analysis.
+
+Time Derivative Computation: Functions for estimating time derivatives for lineages, taxa, and clonal clusters.
+
+Kernel PCA Visualization: Uses Kernel PCA to project and visualize time-dependent microbial community shifts.
+
+Jacobian Matrix Calculation: Computes time-dependent interaction matrices and their eigenvalues.
+
+###Changepoint Detection
+
+This repository includes functions for detecting changepoints in time-series data, particularly in The method uses geometric changepoint detection to identify significant shifts in principal component time-series data.
+
+Features
+
+Multiple Penalty Methods: Supports MBIC, SIC, BIC, and Hannan-Quinn penalty criteria.
+
+Customizable Parameters: Allows for tuning of penalty values, test statistics, and quantile ranges.
+
+Multiple Thresholding Methods: Uses percentile cutoffs, z-scores, and distribution fitting to determine significant changepoints.
+
+Elbow Method: Implements an automated technique for identifying optimal changepoints.
+
+Visualization: Generates plots with significant changepoints overlaid on time-series PCA data.
+
+####Output
+
+The function returns a list containing:
+
+PenaltyResults: Changepoints detected per penalty type.
+
+OverallResults: Aggregated changepoints with frequency scores.
+
+PercentileSignificant: Changepoints based on percentile thresholding.
+
+ZScoreSignificant: Changepoints filtered using z-scores.
+
+DistributionSignificant: Changepoints based on fitted distribution cutoffs.
+
+ElbowSignificant: Changepoints detected using the elbow method.
