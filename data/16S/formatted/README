@@ -1,0 +1,1 @@
+These are the 16S abundances per sample (mouse) parsed from Melis' original files. I used the files with "all" distinct abundances (per OTU), rather than the "grouped" or "glom" files.
